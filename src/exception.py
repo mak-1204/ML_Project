@@ -1,7 +1,7 @@
 #to track exceptions in the code we use sys module
 # and create a custom exception class that inherits from the Exception class
 import sys
-import logging
+from src.logger import logging
 
 
 # Any exception that occurs in the code will be caught here
@@ -29,4 +29,3 @@ class CustomException(Exception):
         """
         return self.error_message  
     
-
